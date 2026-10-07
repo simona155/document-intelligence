@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: document-intelligence-postgres
+    environment:
+      POSTGRES_DB: document_intelligence
+      POSTGRES_USER: document_app
+      POSTGRES_PASSWORD: document_app_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

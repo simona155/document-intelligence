@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DocumentIntelligence.Api.Controllers;
 
 [ApiController]
 [Route("api/documents")]
+[Authorize]
 public class DocumentsController : ControllerBase
 {
     [HttpGet]

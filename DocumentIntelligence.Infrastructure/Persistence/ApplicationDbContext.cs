@@ -19,6 +19,10 @@ public class ApplicationDbContext : DbContext
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<User>()
+            .HasIndex(user => user.Email)
+            .IsUnique();
+
+        modelBuilder.Entity<User>()
             .HasMany(user => user.Documents)
             .WithOne(document => document.User)
             .HasForeignKey(document => document.UserId)

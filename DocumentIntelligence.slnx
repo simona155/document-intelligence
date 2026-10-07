@@ -1,3 +1,6 @@
 <Solution>
   <Project Path="DocumentIntelligence.Api/DocumentIntelligence.Api.csproj" />
+  <Project Path="DocumentIntelligence.Application/DocumentIntelligence.Application.csproj" />
+  <Project Path="DocumentIntelligence.Domain/DocumentIntelligence.Domain.csproj" />
+  <Project Path="DocumentIntelligence.Infrastructure/DocumentIntelligence.Infrastructure.csproj" />
 </Solution>

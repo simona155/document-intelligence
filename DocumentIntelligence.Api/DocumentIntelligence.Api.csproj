@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.12" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DocumentIntelligence.Application\DocumentIntelligence.Application.csproj" />
+    <ProjectReference Include="..\DocumentIntelligence.Infrastructure\DocumentIntelligence.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
